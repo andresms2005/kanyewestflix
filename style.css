@@ -5,7 +5,7 @@ body {
     background-image: url('https://wallpapercave.com/wp/wp2621980.jpg');
     background-size: cover;
     background-position: center;
-    color: #000;
+    color: #333;
     position: relative;
 }
 
@@ -16,13 +16,13 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Escurece um pouco a imagem */
-    backdrop-filter: blur(8px); /* Aplica o desfoque */
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(8px);
     z-index: -1;
 }
 
 header, section, footer {
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente para o conteúdo */
+    background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 20px;
@@ -36,6 +36,17 @@ header {
     padding: 20px;
     border-radius: 0;
     box-shadow: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
 nav ul li a {
@@ -58,6 +69,23 @@ h2 {
     border-radius: 8px;
 }
 
+.video-gallery {
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-gallery a {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    width: 30%;
+}
+
+.video-gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
 footer {
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
@@ -68,4 +96,26 @@ footer {
     width: 100%;
     border-radius: 0;
     box-shadow: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.descricao-polemicas {
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
 }
